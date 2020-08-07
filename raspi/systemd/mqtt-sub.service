@@ -1,0 +1,9 @@
+[Unit]
+Description=DHT11 sensor application
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/work/personal-pj/aws-iot-device-sdk-python/samples/mqtt-sub.py
+
+[Install]
+WantedBy=multi-user.target

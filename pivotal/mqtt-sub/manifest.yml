@@ -1,0 +1,11 @@
+---
+applications:
+- name: hosomi-piper3-mqtt-sub
+  memory: 256M
+  no-route: true
+  command: python mqtt-sub.py
+  health-check-type: process
+  buildpacks:
+  - https://github.com/cloudfoundry/python-buildpack.git
+  services:
+  - hosomi-piper3-redis

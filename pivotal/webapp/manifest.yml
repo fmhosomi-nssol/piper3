@@ -1,0 +1,8 @@
+---
+applications:
+- name: hosomi-piper3-web
+  memory: 256M
+  buildpacks:
+  - https://github.com/cloudfoundry/python-buildpack.git
+  services:
+  - hosomi-piper3-redis
